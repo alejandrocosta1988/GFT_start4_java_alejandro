@@ -11,7 +11,10 @@ public class CarroTest {
         System.out.println("Criando Carro sem especificar capacidade do tanque...");
         var outroCarro = new Carro("branco", "Logan");
         System.out.println("Ok");
-
+        
+        System.out.println("Calculando valor para encher o tanque...");
+        umCarro.calcularValorDoTanqueCheio(6.99);
+        System.out.println("Ok");
 	}
 
 }
