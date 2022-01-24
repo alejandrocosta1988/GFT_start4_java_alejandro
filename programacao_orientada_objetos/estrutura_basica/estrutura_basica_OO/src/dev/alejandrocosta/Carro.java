@@ -9,4 +9,10 @@ public class Carro {
 	private String modelo;
 	private double capacidadeDoTanque;
 
+	Carro(String cor, String modelo, double capacidadeDoTanque){
+		this.cor = cor;
+		this.modelo = modelo;
+		this.capacidadeDoTanque = capacidadeDoTanque;
+	}
+	
 }
