@@ -19,6 +19,10 @@ public class CarroTest {
         System.out.println("Ajustando valores dos atributos...");
         System.out.println("Alteração do modelo: " + umCarro.setModelo("Fluence"));
         System.out.println("Modelo alterado com sucesso");
+        
+        System.out.println("Apresentando valores dos atributos...");
+        System.out.println("Apresentação do modelo: " + umCarro.getModelo());
+        System.out.println("Ok");
 	}
 
 }
