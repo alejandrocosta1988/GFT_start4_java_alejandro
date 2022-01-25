@@ -24,4 +24,9 @@ public class Carro
 	    this.capacidadeDoTanque = 40;
 	}
 	
+	public double calcularValorDoTanqueCheio(double valorDoLitro)
+	{
+		return this.capacidadeDoTanque * valorDoLitro;
+	}
+	
 }
