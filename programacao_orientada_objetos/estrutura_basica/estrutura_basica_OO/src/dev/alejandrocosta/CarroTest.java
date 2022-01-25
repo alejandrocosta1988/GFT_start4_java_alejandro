@@ -13,7 +13,7 @@ public class CarroTest {
         System.out.println("Ok");
         
         System.out.println("Calculando valor para encher o tanque...");
-        umCarro.calcularValorDoTanqueCheio(6.99);
+        System.out.println("Valor do tanque cheio: " + umCarro.calcularValorDoTanqueCheio(6.99));
         System.out.println("Ok");
 	}
 
