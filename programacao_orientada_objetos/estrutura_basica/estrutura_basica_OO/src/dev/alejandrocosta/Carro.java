@@ -24,6 +24,11 @@ public class Carro
 	    this.capacidadeDoTanque = 40;
 	}
 	
+	public String getModelo()
+	{
+		return this.modelo; 
+	}
+	
 	public double calcularValorDoTanqueCheio(double valorDoLitro)
 	{
 		return this.capacidadeDoTanque * valorDoLitro;
