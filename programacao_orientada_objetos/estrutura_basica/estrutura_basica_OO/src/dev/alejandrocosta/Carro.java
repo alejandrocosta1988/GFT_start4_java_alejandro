@@ -34,6 +34,11 @@ public class Carro
 		this.modelo = modelo;
 	}
 	
+	public void setCor(String cor)
+	{
+		this.cor = cor;
+	}
+	
 	public double calcularValorDoTanqueCheio(double valorDoLitro)
 	{
 		return this.capacidadeDoTanque * valorDoLitro;
