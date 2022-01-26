@@ -20,13 +20,17 @@ public class CarroTest {
         umCarro.setModelo("Fluence");
         System.out.println("Modelo alterado com sucesso");
         
-        System.out.println("Apresentando valores dos atributos...");
-        System.out.println("Apresentação do modelo: " + umCarro.getModelo());
+        System.out.println("Apresentando atributo modelo...");
+        System.out.println("Modelo: " + umCarro.getModelo());
         System.out.println("Ok");
         
         System.out.println("Alterando o atributo cor do carro...");
         umCarro.setCor("red");
         System.out.println("Cor alterada com sucesso");
+        
+        System.out.println("Apresentando atributo cor...");
+        System.out.println("Cor: " + umCarro.getCor());
+        System.out.println("Ok");
 	}
 
 }
