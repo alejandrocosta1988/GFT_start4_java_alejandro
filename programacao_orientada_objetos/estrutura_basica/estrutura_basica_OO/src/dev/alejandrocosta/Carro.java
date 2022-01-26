@@ -24,6 +24,13 @@ public class Carro
 	    this.capacidadeDoTanque = 40;
 	}
 	
+	Carro()
+	{
+		this.cor = "não definido";
+		this.modelo = "não definido";
+		this.capacidadeDoTanque = 0;
+	}
+	
 	public String getModelo()
 	{
 		return this.modelo; 
