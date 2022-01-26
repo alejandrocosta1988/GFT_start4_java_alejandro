@@ -44,6 +44,11 @@ public class Carro
 		this.cor = cor;
 	}
 	
+	public void setCapacidadeDoTanque(double valor)
+	{
+		this.capacidadeDoTanque = valor;
+	}
+	
 	public double calcularValorDoTanqueCheio(double valorDoLitro)
 	{
 		return this.capacidadeDoTanque * valorDoLitro;
