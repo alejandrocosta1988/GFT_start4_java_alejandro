@@ -31,6 +31,10 @@ public class CarroTest {
         System.out.println("Apresentando atributo cor...");
         System.out.println("Cor: " + umCarro.getCor());
         System.out.println("Ok");
+        
+        System.out.println("Alterando o atributo capacidade do tanque...");
+        umCarro.setCapacidadeDoTanque(45);
+        System.out.println("Capacidade do tanque alterada com sucesso");
 	}
 
 }
