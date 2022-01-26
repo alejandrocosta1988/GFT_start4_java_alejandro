@@ -34,6 +34,11 @@ public class Carro
 		return this.cor;
 	}
 	
+	public double getCapacidadeDoTanque()
+	{
+		return this.capacidadeDoTanque;
+	}
+	
 	public void setModelo(String modelo)
 	{
 		this.modelo = modelo;
