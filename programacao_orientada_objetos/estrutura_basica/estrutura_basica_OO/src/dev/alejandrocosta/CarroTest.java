@@ -35,6 +35,10 @@ public class CarroTest {
         System.out.println("Alterando o atributo capacidade do tanque...");
         umCarro.setCapacidadeDoTanque(45);
         System.out.println("Capacidade do tanque alterada com sucesso");
+        
+        System.out.println("Apresentando atributo capacidade do tanque...");
+        System.out.println("Capacidade do taque (L): " + umCarro.getCapacidadeDoTanque());
+        System.out.println("Ok");
 	}
 
 }
