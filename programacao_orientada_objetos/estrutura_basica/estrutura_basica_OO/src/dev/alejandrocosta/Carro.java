@@ -29,6 +29,11 @@ public class Carro
 		return this.modelo; 
 	}
 	
+	public String getCor()
+	{
+		return this.cor;
+	}
+	
 	public void setModelo(String modelo)
 	{
 		this.modelo = modelo;
