@@ -16,4 +16,9 @@ public class Veiculo {
     	return this.proprietario;
     }
     
+    public String getPlaca()
+    {
+    	return this.placa;
+    }
+    
 }
