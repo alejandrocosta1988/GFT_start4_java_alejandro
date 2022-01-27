@@ -1,5 +1,6 @@
 package dev.alejandrocosta;
 
-public class Caminhao {
+public class Caminhao extends Veiculo
+{
 
 }
