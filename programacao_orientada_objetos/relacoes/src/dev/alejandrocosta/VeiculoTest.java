@@ -1,5 +1,4 @@
 package dev.alejandrocosta;
-import Veiculo;
 
 public class VeiculoTest {
 
