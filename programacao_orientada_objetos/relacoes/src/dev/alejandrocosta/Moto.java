@@ -1,6 +1,7 @@
 package dev.alejandrocosta;
 
-public class Moto extends Veiculo{
+public class Moto extends Veiculo
+{
 
 	private String marca;
 	private String modelo;
