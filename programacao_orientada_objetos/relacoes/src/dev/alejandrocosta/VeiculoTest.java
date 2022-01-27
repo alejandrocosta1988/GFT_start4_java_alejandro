@@ -11,6 +11,10 @@ public class VeiculoTest {
         System.out.println("Exibindo nome de proprietário de um veículo...");
         System.out.println("Nome do proprietário: " + umVeiculo.getProprietario());
         System.out.println("Ok\n");
+        
+        System.out.println("Exibindo placa de um veículo...");
+        System.out.println("Placa: " + umVeiculo.getPlaca());
+        System.out.println("Ok\n");
 
 	}
 
