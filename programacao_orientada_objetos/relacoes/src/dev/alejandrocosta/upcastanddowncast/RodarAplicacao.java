@@ -5,8 +5,14 @@ public class RodarAplicacao {
 	public static void main(String[] args)
 	{
 		
-        Funcionario umFuncionario = new Funcionario("Alejandro Costa");
-        System.out.println(umFuncionario.getNome());
+        Funcionario funcionarioUm = new Funcionario("Alejandro Costa");
+        System.out.println(funcionarioUm.getNome());
+        
+        //Upcasting
+        Funcionario funcionarioDois = new Vendedor("Jana R de Santana");
+        System.out.println(funcionarioDois.getNome());
+        
+        
 
 	}
 
