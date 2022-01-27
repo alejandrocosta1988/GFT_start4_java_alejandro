@@ -9,7 +9,7 @@ public class Funcionario
     	this.nome = nome;
     }
     
-    public getNome()
+    public String getNome()
     {
     	return this.nome;
     }
