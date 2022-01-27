@@ -10,4 +10,10 @@ public class Veiculo {
     	this.proprietario = proprietario;
     	this.placa = placa;
     }
+    
+    public String getProprietario
+    {
+    	return this.proprietario;
+    }
+    
 }
