@@ -21,4 +21,9 @@ public class Veiculo {
     	return this.placa;
     }
     
+    public void setProprietario(String nome)
+    {
+    	this.proprietario = nome;
+    }
+    
 }
