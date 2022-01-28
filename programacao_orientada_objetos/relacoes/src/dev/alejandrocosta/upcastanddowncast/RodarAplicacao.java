@@ -18,6 +18,12 @@ public class RodarAplicacao {
         //System.out.println(umVendedor.getNome());
         //umVendedor.setComissao(4000);
         //System.out.println("Comissão: " + umVendedor.getComissao());
+        
+        //Teste do polimorfismo
+        Vendedor funcionarioTres = new Vendedor("Marcelo R de Santana", 96000);
+        funcionarioTres.setComissao(17579.58);
+        System.out.println(funcionarioTres.getNome());
+        System.out.println(funcionarioTres.getSalario());
 	}
 
 }
