@@ -12,4 +12,9 @@ public class Endereco {
     	this.cidade = cidade;
     	this.estado = estado;
     }
+    
+    public String getEndereco()
+    {
+    	return rua + ", " + cidade + ", " + estado + ".";
+    }
 }
