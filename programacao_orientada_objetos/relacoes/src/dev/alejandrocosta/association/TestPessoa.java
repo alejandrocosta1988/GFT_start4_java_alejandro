@@ -8,6 +8,7 @@ public class TestPessoa {
         Endereco umEndereco = new Endereco("Rua Quintino Bocaiuva", "Xique-Xique", "Bahia");
         Pessoa umaPessoa = new Pessoa("Alejandro Costa", umEndereco);
         System.out.println("Ok");
+        System.out.println(umaPessoa);
 
 	}
 
