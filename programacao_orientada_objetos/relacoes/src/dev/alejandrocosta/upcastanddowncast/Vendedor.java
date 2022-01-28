@@ -4,9 +4,9 @@ public class Vendedor extends Funcionario
 {
     private double comissao;
     
-    Vendedor(String nome)
+    Vendedor(String nome, double salario)
     {
-    	super(nome);
+    	super(nome, salario);
     }
     
     public void setComissao(double valor)
