@@ -5,11 +5,12 @@ public class RodarAplicacao {
 	public static void main(String[] args)
 	{
 		
-        Funcionario funcionarioUm = new Funcionario("Alejandro Costa");
+        Funcionario funcionarioUm = new Funcionario("Alejandro Costa", 84000);
         System.out.println(funcionarioUm.getNome());
+        System.out.println("Salário: " + funcionarioUm.getSalario());
         
         //Upcasting
-        Funcionario funcionarioDois = new Vendedor("Jana R de Santana");
+        Funcionario funcionarioDois = new Vendedor("Jana R de Santana", 96000);
         System.out.println(funcionarioDois.getNome());
         
         //Downcasting: se executar dá erro. Existem informações em Vendedor que não existem em Funcionario. O compilador não aceita a operação. Downcast devem ser evitados.
