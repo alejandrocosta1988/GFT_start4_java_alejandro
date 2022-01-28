@@ -18,4 +18,10 @@ public class Vendedor extends Funcionario
     {
     	return this.comissao;
     }
+    
+    //Polymorphism
+    public double getSalario()
+    {
+    	return super.getSalario() + this.comissao;
+    }
 }
