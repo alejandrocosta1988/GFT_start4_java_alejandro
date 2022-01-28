@@ -20,4 +20,9 @@ public class Funcionario
     {
     	return this.salario;
     }
+    
+    public void getFuncao()
+    {
+    	System.out.println(this.getNome() + " - Funcionário");
+    }
 }
