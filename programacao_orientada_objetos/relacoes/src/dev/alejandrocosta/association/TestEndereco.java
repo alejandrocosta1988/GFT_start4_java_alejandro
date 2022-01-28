@@ -6,6 +6,7 @@ public class TestEndereco {
 		
         Endereco umEndereco = new Endereco("Rua Quintino Bocaiuva", "Xique-Xique", "Bahia");
         System.out.println("Ok");
+        System.out.println(umEndereco.getEndereco());
 
 	}
 
