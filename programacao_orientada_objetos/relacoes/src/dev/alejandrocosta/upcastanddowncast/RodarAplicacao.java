@@ -24,6 +24,11 @@ public class RodarAplicacao {
         funcionarioTres.setComissao(17579.58);
         System.out.println(funcionarioTres.getNome());
         System.out.println(funcionarioTres.getSalario());
+        
+        System.out.println();
+        System.out.println("Teste de sobrescrita:");
+        funcionarioUm.getFuncao();
+        funcionarioDois.getFuncao();
 	}
 
 }
