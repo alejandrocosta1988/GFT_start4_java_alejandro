@@ -10,5 +10,10 @@ public class Pessoa {
 		this.nome = nome;
 		this.endereco = endereco;
 	}
+
+	@Override
+	public String toString() {
+		return "Pessoa [nome=" + nome + ", endereco=" + endereco.getEndereco() + "]";
+	}	
 	
 }
