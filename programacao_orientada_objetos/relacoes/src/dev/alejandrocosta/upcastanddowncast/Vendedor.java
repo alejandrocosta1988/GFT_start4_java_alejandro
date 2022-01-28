@@ -24,4 +24,13 @@ public class Vendedor extends Funcionario
     {
     	return super.getSalario() + this.comissao;
     }
+    
+    //Sobrescrita - override
+    @Override
+    public void getFuncao()
+    {
+    	System.out.println(this.getNome() + " - Vendedor");
+    }
+    
+    
 }
