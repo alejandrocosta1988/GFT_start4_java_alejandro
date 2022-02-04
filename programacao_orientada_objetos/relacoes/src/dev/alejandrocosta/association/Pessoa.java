@@ -22,6 +22,11 @@ public class Pessoa {
 	@Override
 	public String toString() {
 		return "Pessoa [nome=" + nome + ", endereco=" + endereco.getEndereco() + "]";
-	}	
+	}
+	
+	public String getNome()
+	{
+		return this.nome;
+	}
 	
 }
