@@ -10,6 +10,12 @@ public class Pessoa {
 		this.nome = nome;
 		this.endereco = endereco;
 	}
+	
+	Pessoa(String nome, String rua, String cidade, String estado)
+	{
+		this.nome = nome;
+		this.endereco = new Endereco(rua, cidade, estado);
+	}
 
 	@Override
 	public String toString() {
