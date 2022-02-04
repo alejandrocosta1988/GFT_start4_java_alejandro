@@ -10,5 +10,9 @@ public class Cliente extends Pessoa
         this.numeroDeCompras = 0;
     }
     
-    
+    @Override
+    public String toString()
+    {
+    	return "Cliente [nome=" + nome + ", endereco=" + endereco.getEndereco() + "Número de compras na loja: " + this.numeroDeCompras + "]";
+    }
 }
