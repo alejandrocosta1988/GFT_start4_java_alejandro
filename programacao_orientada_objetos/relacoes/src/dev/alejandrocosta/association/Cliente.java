@@ -13,7 +13,7 @@ public class Cliente extends Pessoa
     @Override
     public String toString()
     {
-    	return "Cliente [nome=" + super.getNome() + ", endereco=" + endereco.getEndereco() + "Número de compras na loja: " + this.getNumeroDeCompras() + "]";
+    	return "Cliente [nome=" + super.getNome() + ", endereco=" + super.getEndereco() + "Número de compras na loja: " + this.getNumeroDeCompras() + "]";
     }
     
     public int getNumeroDeCompras()
