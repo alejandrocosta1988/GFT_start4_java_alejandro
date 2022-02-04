@@ -14,6 +14,9 @@ public class TestPessoa {
         Pessoa pessoaDois = new Pessoa("Jana R Santana", "Villa Caputti", "Xique-Xique", "Bahia");
         System.out.println("Ok");
         System.out.println(pessoaDois);
+        
+        System.out.println("Retornando nome da pessoa...");
+        System.out.println(pessoaDois.getNome());
 
 	}
 
