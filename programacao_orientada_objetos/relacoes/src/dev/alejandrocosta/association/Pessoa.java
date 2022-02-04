@@ -3,6 +3,8 @@ package dev.alejandrocosta.association;
 public class Pessoa {
 
 	private String nome;
+	
+	// Associação do tipo: Composição (endereço só existe junto com pessoa. Se pessoa deixa de existir, Endereco também deixa.)
 	private Endereco endereco;
 	
 	Pessoa(String nome, Endereco endereco)
