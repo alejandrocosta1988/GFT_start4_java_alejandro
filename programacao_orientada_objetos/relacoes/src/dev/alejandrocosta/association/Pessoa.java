@@ -21,12 +21,17 @@ public class Pessoa {
 
 	@Override
 	public String toString() {
-		return "Pessoa [nome=" + nome + ", endereco=" + endereco.getEndereco() + "]";
+		return "Pessoa [nome=" + nome + ", endereco=" + this.getEndereco() + "]";
 	}
 	
 	public String getNome()
 	{
 		return this.nome;
+	}
+	
+	public String getEndereco()
+	{
+		return endereco.getEndereco();
 	}
 	
 }
