@@ -28,7 +28,7 @@ public class Cliente extends Pessoa
     
     public String realizarPagamento(Cupom cupomDeDesconto)
     {
-    	return "Realizando pagamento com " + "% de desconto.";
+    	return "Realizando pagamento com " + cupomDeDesconto.getDesconto() + "% de desconto.";
     }
     
 }
