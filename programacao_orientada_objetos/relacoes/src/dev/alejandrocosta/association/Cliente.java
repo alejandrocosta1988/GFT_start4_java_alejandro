@@ -26,4 +26,9 @@ public class Cliente extends Pessoa
     	return "Realizando pagamento SEM desconto por cupom.";
     }
     
+    public String realizarPagamento(Cupom cupomDeDesconto)
+    {
+    	return "Realizando pagamento com " + "% de desconto.";
+    }
+    
 }
