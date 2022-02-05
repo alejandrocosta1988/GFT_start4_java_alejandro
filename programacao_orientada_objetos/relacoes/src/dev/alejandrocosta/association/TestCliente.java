@@ -8,6 +8,9 @@ public class TestCliente {
 		Cliente clienteUm = new Cliente("Alejandro Costa", "Villa Caputti", "Xique-Xique", "Bahia");
 		System.out.println("Ok");
 		System.out.println(clienteUm);
+		
+		System.out.println("Testando métodos de pagamento...");
+		System.out.println(clienteUm.realizarPagamento());
 
 	}
 
