@@ -8,4 +8,9 @@ public class Cupom {
 	{
 		this.desconto = desconto;
 	}
+	
+	public double getDesconto()
+	{
+		return this.desconto;
+	}
 }
