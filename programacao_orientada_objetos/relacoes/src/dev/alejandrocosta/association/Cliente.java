@@ -26,6 +26,7 @@ public class Cliente extends Pessoa
     	return "Realizando pagamento SEM desconto por cupom.";
     }
     
+    // Associação do tipo: Dependência
     public String realizarPagamento(Cupom cupomDeDesconto)
     {
     	return "Realizando pagamento com " + cupomDeDesconto.getDesconto() + "% de desconto.";
