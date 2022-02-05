@@ -11,6 +11,7 @@ public class TestCliente {
 		
 		System.out.println("Testando métodos de pagamento...");
 		System.out.println(clienteUm.realizarPagamento());
+		System.out.println(clienteUm.realizarPagamento(new Cupom(10)));
 
 	}
 
