@@ -21,4 +21,9 @@ public class Cliente extends Pessoa
     	return this.numeroDeCompras;
     }
     
+    public String realizarPagamento()
+    {
+    	return "Realizando pagamento SEM desconto por cupom.";
+    }
+    
 }
