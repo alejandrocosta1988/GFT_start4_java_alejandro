@@ -14,5 +14,11 @@ public class Calculadora implements OperacaoMatematica
 	{
 		System.out.println("Subtração: " + primeiroNumero - segundoNumero);
 	}
+	
+	@Override
+	public void multiplicacao(double primeiroNumero, double segundoNumero)
+	{
+		System.out.println("Multiplicação: " + primeiroNumero * segundoNumero);
+	}
 
 }
