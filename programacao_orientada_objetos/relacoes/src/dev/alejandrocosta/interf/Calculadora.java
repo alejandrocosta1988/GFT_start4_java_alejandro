@@ -2,6 +2,7 @@ package dev.alejandrocosta.interf;
 
 public class Calculadora implements OperacaoMatematica
 {
+	// A classe Calculadora implementa a nterface OperacaoMatematica, então ela TEM que sobrescrever todos os métodos que existem na interface.
 	
 	@Override
 	public void soma(double primeiroNumero, double segundoNumero)
