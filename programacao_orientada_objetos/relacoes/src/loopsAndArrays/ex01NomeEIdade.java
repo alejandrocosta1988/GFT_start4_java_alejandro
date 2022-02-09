@@ -11,14 +11,21 @@ public class ex01NomeEIdade {
 	
 	public static void main(String[] args)
 	{
+		Scanner scan = new Scanner(System.in);
+		String nome = "Indefinido";
+		int idade = 0;
 		
-		public Scanner in = new Scanner(System.in);
+		while(true)
+		{
+			System.out.println("Nome:");
+			nome = scan.nextLine();
+			if (nome.equals("0")) break;
+			
+			System.out.println("Idade:");
+			idade = scan.nextInt();	
+		}
 		
-		public String nome;
-		public int idade;
-		
-		
-		
+		System.out.println("Nome: " + nome + ", Idade: " + idade);
 	}
 	
 }
