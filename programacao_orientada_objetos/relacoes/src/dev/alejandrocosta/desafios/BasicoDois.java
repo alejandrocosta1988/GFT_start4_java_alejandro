@@ -21,6 +21,10 @@ public class BasicoDois {
 		System.out.println("Informe um número inteiro: ");
 		userNumber = scan.nextInt();
 		
-		System.out.println(userNumber);
+		for (int i = 0; i <= userNumber; i++)
+		{
+			System.out.println(i);
+		}
+		
 	}
 }
