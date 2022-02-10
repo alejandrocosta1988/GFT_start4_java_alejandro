@@ -17,5 +17,10 @@ public class BasicoDois {
 	{
 		Scanner scan = new Scanner(System.in);
 		int userNumber;
+		
+		System.out.println("Informe um número inteiro: ");
+		userNumber = scan.nextInt();
+		
+		System.out.println(userNumber);
 	}
 }
