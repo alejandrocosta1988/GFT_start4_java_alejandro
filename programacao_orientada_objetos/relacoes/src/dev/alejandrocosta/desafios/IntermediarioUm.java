@@ -15,6 +15,7 @@ public class IntermediarioUm {
     	double aumentoEmPorcentagem = aumentoAbsoluto * 100 / B;
     	
     	System.out.printf("%.2f", aumentoEmPorcentagem);
+    	System.out.print("%");
 	}
 
 }
