@@ -1,6 +1,7 @@
 package dev.alejandrocosta.desafios;
 
 import java.util.Scanner;
+import java.lang.Math;
 
 /** A entrada contém vários casos de teste. A primeira e única linha de cada caso de teste contém quatro inteiros X1, Y1, X2 e Y2 (1 ≤ X1, Y1, X2, Y2 ≤ 8). A dama começa na casa de coordenadas (X1, Y1), e a casa de destino é a casa de coordenadas(X2, Y2). No tabuleiro, as colunas são numeradas da esquerda para a direita de 1 a 8 e as linhas de cima para baixo também de 1 a 8. As coordenadas de uma casa na linha X e coluna Y são (X, Y ).
  * O final da entrada é indicado por uma linha contendo quatro zeros.
@@ -20,12 +21,12 @@ public class BasicoTres {
 	    	x2 = sc.nextInt();
 	    	y2 = sc.nextInt();
 	    	if(x1 == 0 && y1 == 0 && x2 == 0 && y2 == 0) break; //condição de parada
-	    	if(        )		
+	    	if( x1 == x2 && y1 == y2 )		
 	    		System.out.println("0");
-	        else if(                 )	
-	        	System.out.println();
-	    	else if(                  )
-	    		System.out.println(   );	
+	        else if(x1 == x2 || y1 == y2)	
+	        	System.out.println("1");
+	    	else if( Math.abs(x2 - x1) == Math.abs(y2 - y1))
+	    		System.out.println("1");	
 	        else 
 	        	System.out.println("2");	
 	    }
