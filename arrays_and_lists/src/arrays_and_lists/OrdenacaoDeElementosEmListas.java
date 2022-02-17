@@ -3,6 +3,7 @@ package arrays_and_lists;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class OrdenacaoDeElementosEmListas {
 
@@ -38,11 +39,21 @@ public class OrdenacaoDeElementosEmListas {
         // Ordenação utilizando um Comparator
         System.out.println("Imprimindo em ordem de idade:");
         // Podemos utilizar o método de List ou o de Collections
-        Collections.sort(gatos, new ComparatorIdade());
+        //Collections.sort(gatos, new ComparatorIdade());
+        gatos.sort(new ComparatorIdade());
+        System.out.println(gatos);
+        System.out.println();
         
+        System.out.println("Imprimindo em ordem de cor:");
+        gatos.sort(new ComparatorCor());
+        System.out.println(gatos);
+        System.out.println();
         
+        System.out.println("Imprimindo em ordem de nome, cor e idade (nessa prioridade):");
+        gatos.sort(new ComparatorNomeCorIdade());
+        System.out.println(gatos);
+        System.out.println();
         
-	
 	}
 	
 }
@@ -109,6 +120,30 @@ class ComparatorIdade implements Comparator<Gato>
 	@Override
 	public int compare(Gato gatoUm, Gato gatoDois)
 	{
+		return Integer.compare(gatoUm.getIdade(), gatoDois.getIdade());
+	}
+}
+
+class ComparatorCor implements Comparator<Gato>
+{
+	@Override
+	public int compare(Gato gatoUm, Gato gatoDois)
+	{
+		return gatoUm.getCor().compareToIgnoreCase(gatoDois.getCor());
+	}
+}
+
+class ComparatorNomeCorIdade implements Comparator<Gato>
+{
+	@Override
+	public int compare(Gato gatoUm, Gato gatoDois)
+	{
+		int nome = gatoUm.getNome().compareToIgnoreCase(gatoDois.getNome());
+		if (nome != 0) return nome;
+		
+		int cor = gatoUm.getCor().compareToIgnoreCase(gatoDois.getCor());
+		if (cor != 0) return cor;
+		
 		return Integer.compare(gatoUm.getIdade(), gatoDois.getIdade());
 	}
 }
