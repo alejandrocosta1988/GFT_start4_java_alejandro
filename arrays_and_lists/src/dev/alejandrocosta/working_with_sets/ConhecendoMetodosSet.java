@@ -74,8 +74,6 @@ public class ConhecendoMetodosSet {
 		notasEmOrdemCrescente.clear();
 		System.out.println("Testando se o conjunto está vazio. Resultado: " + notasEmOrdemCrescente.isEmpty());
 		
-        
-        
 	}
 
 }
