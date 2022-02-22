@@ -3,7 +3,10 @@ package dev.alejandrocosta.working_with_maps;
 import java.util.Map;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.Set;
+import java.util.TreeMap;
 
 public class ConhecendoMetodosMap {
 
@@ -46,7 +49,7 @@ public class ConhecendoMetodosMap {
 		
 		System.out.println("Carro mais econômico...");
 		double consumoMaisEficiente = Collections.max(carrosPopulares.values());
-		Set<Map.Entry<String, Double>> entries = carrosPopulares.entrySet(); // O método .entrySet() retorna um Set com a implementação da interface Entry
+		Set<Map.Entry<String, Double>> entries = carrosPopulares.entrySet(); // O método .entrySet() retorna um Set com a implementação da interface Entry. Dessa forma, é possível manipular valores e chaves separadamente.
 		String modeloMaisEficiente = "";
 		for (Map.Entry<String, Double> entry : entries)
 		{
@@ -66,8 +69,46 @@ public class ConhecendoMetodosMap {
 		} // inserindo a impressão dentro do if, se houver mais de um modelo com o mesmo consumo, ambos serão impressos. 
 		System.out.println();
 		
+		System.out.println("Exibindo a soma e a média dos valores...");
+		Iterator<Double> iterator = carrosPopulares.values().iterator();
+		double soma = 0d;
+		while (iterator.hasNext()) soma += iterator.next();
+		System.out.println("Soma: " + soma + "\nMédia: " + soma/carrosPopulares.size());
+		System.out.println();
 		
+		System.out.println("Removendo modelos com consumo de 15,6 km/L...");
+		Iterator<Double> removedor = carrosPopulares.values().iterator();
+		while (removedor.hasNext())
+		{
+			if (removedor.next().equals(15.6)) removedor.remove();
+		}
+		System.out.println(carrosPopulares);
+		System.out.println();
 		
+		System.out.println("Exibindo os carros na ordem em que foram informados:");
+		Map<String, Double> carrosPopularesEmOrdem = new LinkedHashMap<>()
+		{{
+			put("Gol", 14.4);	
+			put("Uno", 15.6);	
+			put("Mobi", 16.1);	
+			put("HB20", 14.5);	
+			put("Kwid", 15.6);	
+		}};
+		System.out.println(carrosPopularesEmOrdem);
+		System.out.println();
+		
+		System.out.println("Exibindo o dicionário ordenado pelo modelo:");
+		Map<String, Double> carrosPopularesEmOrdemDeModelo = new TreeMap<>(carrosPopularesEmOrdem);
+		System.out.println(carrosPopularesEmOrdemDeModelo);
+		System.out.println();
+		
+		System.out.println("Apagando o dicionário de carros...");
+		carrosPopulares.clear();
+		System.out.println(carrosPopulares);
+		System.out.println();
+		
+		System.out.println("Dicionário apagado: " + carrosPopulares.isEmpty());
+		System.out.println();
 		
 		
 	} // main
