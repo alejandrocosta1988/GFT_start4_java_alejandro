@@ -18,13 +18,13 @@ public class Curso extends Conteudo
 	@Override
 	public String toString() 
 	{
-		return "Curso [titulo = " + getTitulo() + ", descricao = " + getDescricao() + ", cargaHoraria = " + cargaHoraria + "]";
+		return "Curso [titulo = " + super.getTitulo() + ", descricao = " + super.getDescricao() + ", cargaHoraria = " + cargaHoraria + "]";
 	}
 	
 	@Override
 	public double calcularXP()
 	{
-		return XP_PADRAO + 20;
+		return XP_PADRAO * this.cargaHoraria;
 	}
 	
 }
