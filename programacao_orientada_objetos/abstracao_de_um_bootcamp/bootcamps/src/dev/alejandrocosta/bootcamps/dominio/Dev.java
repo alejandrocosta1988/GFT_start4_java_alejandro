@@ -11,6 +11,7 @@ public class Dev
 	private Set<Conteudo> conteudosInscritos = new LinkedHashSet<>();
 	private Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();
 	
+	
 	public void inscreverBootcamp(Bootcamp bootcamp)
 	{
 		this.conteudosInscritos.addAll(bootcamp.getConteudos());
@@ -32,7 +33,7 @@ public class Dev
 	
 	public double calcularTotalXP() 
 	{
-		return this.conteudosInscritos
+		return this.conteudosConcluidos
 				.stream()
 				.mapToDouble(Conteudo::calcularXP)
 				.sum();
