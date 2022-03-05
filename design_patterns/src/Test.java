@@ -1,3 +1,4 @@
+import dev.alejandrocosta.gof.facade.Facade;
 import dev.alejandrocosta.gof.singleton.SingletonEager;
 import dev.alejandrocosta.gof.singleton.SingletonLazy;
 import dev.alejandrocosta.gof.singleton.SingletonLazyHolder;
@@ -54,9 +55,11 @@ public class Test {
 		robo.mover();
 
 		System.out.println();
-
+		System.out.println("--".repeat(10) + "Testes do padrão Facade" + "--".repeat(10));
+		System.out.println();
 		
-		
+		Facade facade = new Facade();
+		facade.migrarCliente("Venilton", "40512378523");
 		
 	}
 
