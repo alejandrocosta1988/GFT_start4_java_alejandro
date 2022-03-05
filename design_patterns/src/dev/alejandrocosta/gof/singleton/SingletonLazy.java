@@ -1,4 +1,4 @@
-package dev.alejandrocosta.gof;
+package dev.alejandrocosta.gof.singleton;
 
 /**
  * Singleton "preguiçoso".
