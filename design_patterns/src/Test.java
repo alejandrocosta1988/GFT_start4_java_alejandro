@@ -1,3 +1,4 @@
+import dev.alejandrocosta.gof.abstractfactory.*;
 import dev.alejandrocosta.gof.facade.Facade;
 import dev.alejandrocosta.gof.factory.Computer;
 import dev.alejandrocosta.gof.factory.ComputerFactory;
@@ -71,6 +72,15 @@ public class Test {
 		Computer server = ComputerFactory.getComputer("server", "16 GB", "1 TB", "2.9 GHz");
 		System.out.println("Configuração do PC criado: " + pc);
 		System.out.println("Configuração do Servidor criado: " + server);
+
+		System.out.println();
+		System.out.println("--".repeat(10) + "Testes do padrão Abstract Factory" + "--".repeat(10));
+		System.out.println();
+		
+		dev.alejandrocosta.gof.abstractfactory.Computer pc2 = ComputerFactoryTwo.getComputer(new PCFactory("2 GB", "500 GB", "2.4 GHz"));
+		dev.alejandrocosta.gof.abstractfactory.Computer server2 = ComputerFactoryTwo.getComputer(new ServerFactory("16 GB", "2 TB", "3.4 GHz"));
+		System.out.println("Configuração do PC criado: " + pc2);
+		System.out.println("Configuração do Servidor criado: " + server2);
 		
 	}
 
