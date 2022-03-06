@@ -1,4 +1,6 @@
 import dev.alejandrocosta.gof.facade.Facade;
+import dev.alejandrocosta.gof.factory.Computer;
+import dev.alejandrocosta.gof.factory.ComputerFactory;
 import dev.alejandrocosta.gof.singleton.SingletonEager;
 import dev.alejandrocosta.gof.singleton.SingletonLazy;
 import dev.alejandrocosta.gof.singleton.SingletonLazyHolder;
@@ -60,6 +62,15 @@ public class Test {
 		
 		Facade facade = new Facade();
 		facade.migrarCliente("Venilton", "40512378523");
+
+		System.out.println();
+		System.out.println("--".repeat(10) + "Testes do padrão Factory" + "--".repeat(10));
+		System.out.println();
+		
+		Computer pc = ComputerFactory.getComputer("pc", "4 GB", "500 GB", "2.4 GHz");
+		Computer server = ComputerFactory.getComputer("server", "16 GB", "1 TB", "2.9 GHz");
+		System.out.println("Configuração do PC criado: " + pc);
+		System.out.println("Configuração do Servidor criado: " + server);
 		
 	}
 
